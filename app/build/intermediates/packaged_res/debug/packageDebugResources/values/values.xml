@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="banner">#379AA6</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Quản Lý Nhà Trọ</string>
+    <style name="Base.Theme.Bktra" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Bktra" parent="Base.Theme.Bktra"/>
+    <style name="ToolbarTitleBold" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:titleMarginTop">10dp</item>
+    </style>
+</resources>
