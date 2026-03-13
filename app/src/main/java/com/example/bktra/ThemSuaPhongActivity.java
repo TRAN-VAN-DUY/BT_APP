@@ -31,6 +31,34 @@ public class ThemSuaPhongActivity extends AppCompatActivity {
     private int editPosition = -1;
 
     @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_them_sua_phong);
+//
+//        MaterialToolbar toolbar = findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
+//        if (getSupportActionBar() != null) {
+//            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        }
+//
+//        initViews();
+//        loadIntent();
+//
+//        // Khi đổi trạng thái → bật/tắt trường người thuê
+//        rgTinhTrang.setOnCheckedChangeListener((group, checkedId) -> {
+//            boolean daThue = (checkedId == R.id.rbDaThue);
+//            findViewById(R.id.tilTenNguoiThue).setEnabled(daThue);
+//            findViewById(R.id.tilSoDienThoai).setEnabled(daThue);
+//            tilTenNguoiThue.setError(null);
+//            if (!daThue) {
+//                etTenNguoiThue.setText("");
+//                etSoDienThoai.setText("");
+//            }
+//        });
+//
+//        Button btnLuu = findViewById(R.id.btnLuu);
+//        btnLuu.setOnClickListener(v -> luuPhong());
+//    }
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_them_sua_phong);
@@ -59,7 +87,6 @@ public class ThemSuaPhongActivity extends AppCompatActivity {
         Button btnLuu = findViewById(R.id.btnLuu);
         btnLuu.setOnClickListener(v -> luuPhong());
     }
-
     private void initViews() {
         tilMaPhong = findViewById(R.id.tilMaPhong);
         tilTenPhong = findViewById(R.id.tilTenPhong);
